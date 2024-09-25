@@ -1,0 +1,15 @@
+User Interface:
+
+    The design is modern and welcoming, aimed at adventurous users looking for new dining experiences.
+
+Geolocation:
+
+    The JavaScript code uses the browser's Geolocation API to get the user's location and sends it to a PHP script that fetches restaurant data based on the selected radius.
+
+Restaurant Display:
+
+    Restaurants are displayed in a responsive table with clear styling. The user can click the "Choose for Me!" button to randomly select a restaurant from the displayed list.
+
+Error Handling:
+
+    Alerts are provided for various geolocation errors, ensuring the user knows what went wrong.
