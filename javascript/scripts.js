@@ -15,7 +15,7 @@ function showPosition(position) {
     const radius = document.getElementById('radius').value;
 
     // Fetch restaurants based on precise location
-    fetch(`../fetch_restaurants.php?lat=${lat}&lon=${lon}&radius=${radius}`)
+    fetch(`./fetch_restaurants.php?lat=${lat}&lon=${lon}&radius=${radius}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error("HTTP error " + response.status);
