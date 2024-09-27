@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Restaurant Finder</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="container">
+        <p id="refapi">Powered by google places API</p>
+        <h1 class="title">Embark on a Culinary Adventure!</h1>
+        <p class="subtitle">Find your next meal spot with a bit of adventure!</p>
+
+        <!-- Radius selection -->
+        <div class="input-group">
+            <label for="radius">Choose Your Radius (miles):</label>
+            <select id="radius" class="styled-select">
+                <option value="5">5 Miles</option>
+                <option value="10">10 Miles</option>
+                <option value="15">15 Miles</option>
+            </select>
+        </div>
+
+        <!-- Buttons -->
+        <div class="button-group">
+            <button id="getLocationBtn" class="styled-button">Discover Nearby Restaurants</button>
+            <button id="randomRestaurantBtn" class="styled-button" style="display: none;">Choose for Me!</button>
+        </div>
+
+        <!-- Result container -->
+        <div id="restaurantResult" class="result-container"></div>
+
+        <!-- Dice animation -->
+        <div id="diceContainer" class="dice-container" style="display: none;"></div>
+
+        <!-- Selected restaurant display -->
+        <div id="selectedRestaurant" class="selected-restaurant" style="display: none;"></div>
+    </div>
+
+    <!-- Link to your JavaScript file -->
+    <script src="javascript/scripts.js"></script>
+</body>
+</html>
